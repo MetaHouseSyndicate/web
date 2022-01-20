@@ -1,6 +1,5 @@
 import * as React from 'react';
 import background from './images/imageonline-co-blurimage.png';
-import NavigationBar from './NavigationBar';
 import Home from './Home';
 
 function App() {
@@ -10,8 +9,6 @@ function App() {
       backgroundImage: `url(${background})`,
       backgroundSize: 'cover'
     }}>
-
-      {/* <NavigationBar /> */}
 
       <Home />
 
