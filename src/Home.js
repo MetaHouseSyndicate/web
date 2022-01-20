@@ -32,9 +32,10 @@ const Home = () => {
 
                 <Box
                     paddingX={5}
-                    marginBottom={{ xs: 4, sm: 4 }}
+                    marginBottom={{ xs: 4, sm: 4 }} 
                 >
 
+                    <Link href='https://nftcalendar.io/event/tokens-of-honor/' sx={{ color: 'inherit', textDecoration: 'none' }}>
                     <Countdown
                         endDate={moment('21/01/2022', 'DD/MM/YYYY').tz('America/Toronto')}
                         fontFamily='Lato'
@@ -47,19 +48,20 @@ const Home = () => {
                         <Button 
                             disableRipple 
                             disableElevation 
-                            component={Link} 
-                            href='https://nftcalendar.io/event/tokens-of-honor/' 
-                            sx={{ m: 0, mr: 1, p: 0, minWidth: 0, minHeight: 0, ":hover": { background: 'transparent' } }}>
+                            sx={{ p: 0, ":hover": { background: 'transparent' } }}
+                        >
                             <NFTCalendar color='black' width={40} height={40} />
                         </Button>
                         <Typography sx={{
                             fontFamily: 'Lato', 
                             fontWeight: '300', 
-                            fontSize: { xs: '1.3em', sm: '1.7em' }, 
+                            fontSize: { xs: '1.2em', sm: '1.7em' }, 
+                            textAlign: 'center' 
                         }}>
-                        Tokens of Honor Collection drops on January 21 2022.
+                            Tokens of Honor Collection drops on January 21 2022.
                         </Typography>
                     </Stack>
+                    </Link>
 
                 </Box>
 
