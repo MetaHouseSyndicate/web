@@ -1,6 +1,6 @@
 import { Discord, Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
 import { NFTCalendar, OpenSea } from './CustomIcons';
-import { Box, Button, IconButton, Link, Stack, Typography } from '@mui/material';
+import { Box, Button, Link, Stack, Typography } from '@mui/material';
 import Countdown from './Countdown';
 import moment from 'moment';
 import './Home.css';
