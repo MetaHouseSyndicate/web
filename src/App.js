@@ -1,17 +1,22 @@
 import * as React from 'react';
-import background from './images/imageonline-co-blurimage.png';
+import background from './images/bg-blurred.jpg';
 import NavigationBar from './NavigationBar';
 import Home from './Home';
+// import TestPage from './TestPage';
 
-function App() {
+const App = () => {
 
   return (
+
+    // <TestPage />
+
     <div style={{
       backgroundImage: `url(${background})`,
-      backgroundSize: 'cover'
+      backgroundSize: 'cover',
+      minHeight: '100vh',
     }}>
 
-      {/* <NavigationBar /> */}
+      <NavigationBar />
 
       <Home />
 

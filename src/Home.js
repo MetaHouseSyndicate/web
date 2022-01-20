@@ -5,7 +5,7 @@ import moment from 'moment';
 import { ReactComponent as OpenSeaSVG } from './icons/OpenSea-Transparent-White.svg';
 import './Home.css';
 
-function OpenSea(props) {
+const OpenSea = (props) => {
     return (
       <div style={{
         margin: 0,
@@ -20,7 +20,7 @@ function OpenSea(props) {
     )
   }
 
-function Home() {
+const Home = () => {
 
     const iconSize = 48;
 
@@ -29,7 +29,6 @@ function Home() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            minHeight: '100vh',
         }}>
 
             <div style={{
