@@ -1,28 +1,21 @@
 import { Discord, Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
+import { OpenSea } from './CustomIcons';
 import { Box, Link, Stack } from '@mui/material';
 import Countdown from './Countdown';
 import moment from 'moment';
-import { ReactComponent as OpenSeaSVG } from './icons/OpenSea-Transparent-White.svg';
 import './Home.css';
 
-const OpenSea = (props) => {
-    return (
-      <div style={{
-        margin: 0,
-        padding: 0
-      }}>
-        <OpenSeaSVG 
-          className={props.className}
-          width={props.size} 
-          height={props.size}
-          />
-      </div>
-    )
-  }
+const iconSize = 48;
+
+const socials = [
+    { name: 'OpenSea', url: 'https://opensea.io/MetaHouseSyndicate', html: <OpenSea className='icon' size={iconSize} />},
+    { name: 'Facebook', url: 'https://facebook.com/metahousesyndicate', html: <Facebook className='icon' size={iconSize} />},
+    { name: 'Instagram', url: 'https://instagram.com/metahousesyndicate', html: <Instagram className='icon' size={iconSize} />},
+    { name: 'Twitter', url: 'https://twitter.com/MHSyndicate', html: <Twitter className='icon' size={iconSize} />},
+    { name: 'Discord', url: 'https://discord.gg/JGrxxGB8aK', html: <Discord className='icon' size={iconSize} />}
+];
 
 const Home = () => {
-
-    const iconSize = 48;
 
     return (
         <div style={{
@@ -66,15 +59,10 @@ const Home = () => {
                     </h1>
                 </Box>
 
-
-
-
                 <Stack marginBottom={4} spacing={{ xs: 2, sm: 4 }} direction='row' justifyContent='center'>
-                    <Link href='https://opensea.io/MetaHouseSyndicate' color='inherit'><OpenSea className='icon' size={iconSize} /></Link>
-                    <Link href='https://facebook.com/metahousesyndicate/' color='inherit'><Facebook className='icon' size={iconSize} /></Link>
-                    <Link href='https://instagram.com/metahousesyndicate' color='inherit'><Instagram className='icon' size={iconSize} /></Link>
-                    <Link href='https://twitter.com/MHSyndicate' color='inherit'><Twitter className='icon' size={iconSize} /></Link>
-                    <Link href='https://discord.gg/JGrxxGB8aK' color='inherit'><Discord className='icon' size={iconSize} /></Link>
+                    { socials.map((social) => (
+                        <Link key={social.name + '-link'} href={social.url}>{social.html}</Link>
+                    ))}
                 </Stack>
 
                 <Box
