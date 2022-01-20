@@ -1,5 +1,5 @@
 import * as React from 'react';
-import background from './images/imageonline-co-blurimage.png';
+import background from './images/bg-blurred.jpg';
 import Home from './Home';
 
 function App() {
