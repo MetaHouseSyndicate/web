@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 var moment = require('moment-timezone');
 
-function Countdown({ endDate, fontFamily, fontSize, fontWeight, marginBottom }) {
+const Countdown = ({ endDate, fontFamily, fontSize, fontWeight, marginBottom }) => {
 
     const [timerDays, setTimerDays] = useState('00');
     const [timerHours, setTimerHours] = useState('00');
