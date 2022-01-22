@@ -39,8 +39,9 @@ const Countdown = ({ endDate, fontFamily, fontSize, fontWeight, marginBottom }) 
 
     useEffect(() => {
         startTimer();
+        const current = interval.current;
         return () => {
-            clearInterval(interval.current);
+            clearInterval(current);
         }
     })
 
