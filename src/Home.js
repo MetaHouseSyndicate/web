@@ -18,7 +18,7 @@ const socials = [
 
 const Home = () => {
 
-    const TokensOfHonorReleaseDate = moment('21/01/2022 1:30:00 pm', 'DD/MM/YYYY h:mm:ss a').tz('America/Toronto');
+    const TokensOfHonorReleaseDate = moment('28/01/2022 12:00:00 pm', 'DD/MM/YYYY h:mm:ss a').tz('America/Toronto');
 
     const HeaderCountdown = () => {
         return (
@@ -45,7 +45,7 @@ const Home = () => {
                         fontSize: { xs: '1.2em', sm: '1.7em' },
                         textAlign: 'center'
                     }}>
-                        Tokens of Honor Collection drops today at 1:30PM EST.
+                        Tokens of Honor Collection drops <b>Friday</b> 1:30PM EST.
                     </Typography>
                 </Stack>
             </Link>
@@ -108,8 +108,6 @@ const Home = () => {
 
                     {
                         TokensOfHonorReleaseDate.diff(moment()) > 0
-                        // moment().diff(moment()) > 0
-                        // false
                             ? <HeaderCountdown />
                             : <HeaderRelease />
                     }
