@@ -20,7 +20,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 // Pass your reCAPTCHA v3 site key (public key) to activate(). Make sure this
 // key is the counterpart to the secret key you set in the Firebase console.
@@ -33,9 +33,18 @@ const appCheck = initializeAppCheck(app, {
 });
 
 
-export const analytics = getAnalytics(app);
-export const storage = getStorage(app);
+const analytics = getAnalytics(app);
+const storage = getStorage(app);
 
-export async function stall(stallTime = 3000) {
+async function stall(stallTime = 3000) {
   await new Promise(resolve => setTimeout(resolve, stallTime));
 }
+
+export {
+  app,
+  appCheck,
+  analytics,
+  storage,
+
+  stall
+};
