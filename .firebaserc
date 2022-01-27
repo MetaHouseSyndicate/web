@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "meta-house-syndicate"
+  },
+  "targets": {
+    "meta-house-syndicate": {
+      "hosting": {
+        "main": [
+          "meta-house-syndicate"
+        ]
+      }
+    }
   }
 }
