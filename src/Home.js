@@ -18,7 +18,7 @@ const socials = [
 
 const Home = () => {
 
-    const TokensOfHonorReleaseDate = moment('21/01/2022 1:30:00 pm', 'DD/MM/YYYY h:mm:ss a').tz('America/Toronto');
+    const TokensOfHonorReleaseDate = moment('28/01/2022 12:00:00 pm', 'DD/MM/YYYY h:mm:ss a').tz('America/Toronto');
 
     const HeaderCountdown = () => {
         return (
@@ -108,8 +108,6 @@ const Home = () => {
 
                     {
                         TokensOfHonorReleaseDate.diff(moment()) > 0
-                        // moment().diff(moment()) > 0
-                        // false
                             ? <HeaderCountdown />
                             : <HeaderRelease />
                     }
