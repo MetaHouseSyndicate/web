@@ -45,7 +45,7 @@ const Home = () => {
                         fontSize: { xs: '1.2em', sm: '1.7em' },
                         textAlign: 'center'
                     }}>
-                        Tokens of Honor Collection drops today at 1:30PM EST.
+                        Tokens of Honor Collection drops <b>Friday</b> 1:30PM EST.
                     </Typography>
                 </Stack>
             </Link>
