@@ -55,12 +55,12 @@ const Home = () => {
     const HeaderRelease = () => {
         return (
             <Link href='https://opensea.io/collection/tokensofhonor' sx={{ color: 'inherit', textDecoration: 'none' }}>
-                <Stack
-                    direction='horizontal'
-                    justifyContent='center'
-                    alignItems='center'
-                    sx={{
-                        fontSize: { xs: '1.2em', sm: '1.7em' },
+                <Stack 
+                    direction='horizontal' 
+                    justifyContent='center' 
+                    alignItems='center' 
+                    sx={{ 
+                        fontSize: { xs: '1.2em', sm: '1.7em' }, 
                         mb: 4,
                         pt: 0.5,
                         ':hover': {
@@ -79,7 +79,7 @@ const Home = () => {
                         fontFamily: 'Lato',
                         fontWeight: '300',
                         fontSize: 'inherit',
-                        textAlign: 'center',
+                        textAlign: 'center', 
                     }}>
                         Tokens of Honor Collection <b textDecoration='inherit'>available now</b> on OpenSea.
                     </Typography>
@@ -93,6 +93,7 @@ const Home = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            minHeight: '100vh',
         }}>
 
             <div style={{
