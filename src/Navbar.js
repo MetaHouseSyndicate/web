@@ -12,7 +12,7 @@ export const pages = [
     { name: 'Home', link: '/', component: <Home />, icon: <HomeIcon sx={{ mr: 1 }} /> },
 ];
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -25,7 +25,7 @@ const Navbar = () => {
     }
 
     return (
-        <AppBar position='static' color='transparent' elevation={0} sx={{ mb: 3 }}>
+        <AppBar position='static' color='transparent' elevation={0} sx={{ mb: 3 }} {...props}>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
 
