@@ -1,8 +1,7 @@
 import * as React from 'react';
 import background from './images/bg-blurred.jpg';
-import Home from './Home';
 import Navbar from './Navbar';
-
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
 
@@ -15,7 +14,7 @@ const App = () => {
 
       <Navbar />
 
-      <Home />
+      <Outlet />
 
     </div>
   );
