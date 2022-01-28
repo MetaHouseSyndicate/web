@@ -9,7 +9,7 @@ import { React, useState } from 'react'
 import MHSLogo from './icons/MHS_Logo_Transparent_Trimmed.png';
 
 export const pages = [
-    { name: 'Home', link: '/', component: <Home />, icon: <HomeIcon sx={{ mr: 1 }} /> },
+    // { name: 'Home', link: '/', component: <Home />, icon: <HomeIcon sx={{ mr: 1 }} /> },
 ];
 
 const Navbar = (props) => {
