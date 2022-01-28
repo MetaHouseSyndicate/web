@@ -27,7 +27,7 @@ const App = () => {
 
         <Box width={1} sx={{ flexGrow: 0, m: 2 }}>
           <Divider variant="fullWidth">
-            <Typography fontFamily="Lato" fontWeight="400">
+            <Typography fontFamily="Lato" fontWeight="400" color='#616161'>
               {"Copyright © " +
                 moment().year() +
                 " Meta House Syndicate. All rights reserved."}
