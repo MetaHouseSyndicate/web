@@ -7,6 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { React, useState } from 'react'
 import MHSLogo from './icons/MHS_Logo_Transparent_Trimmed.png';
+import { Link } from 'react-router-dom';
 
 export const pages = [
     // { name: 'Home', link: '/', component: <Home />, icon: <HomeIcon sx={{ mr: 1 }} /> },
@@ -30,7 +31,7 @@ const Navbar = (props) => {
                 <Toolbar disableGutters>
 
                     {/* MHS Logo - Desktop */}
-                    <IconButton sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
+                    <IconButton component={Link} to='/' sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
                         <Avatar src={MHSLogo} alt='MHS Logo' width={40}></Avatar>
                     </IconButton>
 
@@ -77,7 +78,7 @@ const Navbar = (props) => {
 
                     {/* MHS Logo - Mobile */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }}>
-                        <IconButton>
+                        <IconButton component={Link} to='/'>
                             <Avatar src={MHSLogo} alt='MHS Logo' sx={{ width: 40, height: 40 }}></Avatar>
                         </IconButton>
                     </Box>
