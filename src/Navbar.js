@@ -1,9 +1,7 @@
 import { AppBar, Avatar, Box, Button, Collapse, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 
-import Home from './Home';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import HomeIcon from '@mui/icons-material/Home';
 
 import { React, useState } from 'react'
 import MHSLogo from './icons/MHS_Logo_Transparent_Trimmed.png';
