@@ -44,7 +44,7 @@ const Navbar = (props) => {
 
                     {/* Menu - Mobile */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }}>
-                        <IconButton size='large' color='inherit' onClick={handleOpenNavMenu}>
+                        <IconButton size='large' color='inherit' onClick={handleOpenNavMenu} sx={{ p: 0, m: 0, ml: 2 }}>
                             {!Boolean(anchorElNav) ? <MenuIcon /> : <MenuOpenIcon />}
                         </IconButton>
 
@@ -64,7 +64,7 @@ const Navbar = (props) => {
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
                                 elevation={0}
-                                sx={{ mt: 1, display: { xs: 'flex', sm: 'none' } }}
+                                sx={{ mt: 3, display: { xs: 'flex', sm: 'none' } }}
                             >
                                 {pages.map((page) => (
                                     <MenuItem key={page.name} onClick={handleCloseNavMenu} sx={{ width: '100vh' }}>
@@ -81,6 +81,11 @@ const Navbar = (props) => {
                         <IconButton component={Link} to='/'>
                             <Avatar src={MHSLogo} alt='MHS Logo' sx={{ width: 40, height: 40 }}></Avatar>
                         </IconButton>
+                    </Box>
+
+                    {/* Placeholder */}
+                    <Box sx={{ flexGrow: 0, width: 40, height: 40 }}>
+                    
                     </Box>
 
                 </Toolbar>
