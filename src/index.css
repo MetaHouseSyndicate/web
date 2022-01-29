@@ -1,10 +1,12 @@
 * {
-    font-family: 'Lato';
-    font-weight: '400';
-    margin: 0;
+  font-family: "Lato";
+  font-weight: "400";
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'Another Danger Slanted';
-    src: local('Another Danger Slanted'), url(./fonts/Another-Danger-Slanted-Demo.woff2);
+  font-family: "Another Danger Slanted";
+  src: local("Another Danger Slanted"),
+    url(./fonts/Another-Danger-Slanted-Demo.woff2);
 }
